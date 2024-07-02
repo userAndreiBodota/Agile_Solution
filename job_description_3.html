@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer</title>
+    <style>
+      @font-face {
+        font-family: db;
+        src: url(/assets/fonts/Downey-Black.otf);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        -webkit-tap-highlight-color: transparent;
+        color: #fff;
+      }
+
+      body {
+        background: radial-gradient(
+            circle,
+            rgba(18, 18, 18, 0.4150035014005602) 40%,
+            rgba(18, 18, 18, 1) 100%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(18, 18, 18, 0) 50%,
+            rgba(18, 18, 18, 0.9136029411764706) 100%
+          ),
+          url("agile/blk\ 3.png") no-repeat 50% 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: db;
+      }
+
+      .navbar {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.5);
+      }
+
+      .navbar img {
+        height: 50px;
+      }
+
+      .back-button {
+        font-size: 20px;
+        cursor: pointer;
+        color: #fff; /* Set back button color to white */
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: transparent;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #000; /* Add black border */
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+      }
+
+      header img {
+        height: 50px;
+      }
+
+      h1 {
+        font-size: 24px;
+        text-align: center;
+        color: #fff; /* Set heading color to white */
+      }
+
+      .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #45a049;
+      }
+
+      .job-description {
+        margin-top: 20px;
+      }
+
+      .job-description h2 {
+        color: #fff;
+        font-size: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-family: db;
+      }
+
+      .job-description p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .job-description p strong {
+        color: #fff;
+      }
+
+      .application-form {
+        margin-top: 40px;
+      }
+
+      .application-form h2 {
+        color: #fff;
+        font-size: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+      .application-form form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .application-form label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-family: db;
+      }
+
+      .application-form input[type="text"],
+      .application-form input[type="email"],
+      .application-form input[type="tel"] {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+        color: #000;
+      }
+
+      .application-form input[type="checkbox"] {
+        margin-bottom: 20px;
+      }
+
+      .application-form button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: db;
+      }
+
+      .application-form button:hover {
+        background-color: #45a049;
+      }
+
+      .application-form .footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .application-form .footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 10px 0;
+        display: inline-block;
+      }
+
+      .application-form .footer a:hover {
+        text-decoration: underline;
+      }
+
+      .application-form .footer p {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="back-button" onclick="history.back()">←</div>
+      <img
+        src="artstopimg/15013b0e-5887-4267-8474-f96e6b3aebf1-removebg-preview.png"
+        alt="Athena Logo"
+      />
+      <div></div>
+    </div>
+    <div class="container">
+      <h1>BE ONE OF US</h1>
+      <a href="#application-form" class="button" id="start-application"
+        >Start Application</a
+      >
+      <div class="job-description">
+        <h2>Job Description</h2>
+        <p><strong>SOCIAL MEDIA MANAGER</strong></p>
+        <p>
+          Agile Solutions seeks a dynamic Social Media Manager to enhance our
+          clients' online presence and engagement. The candidate will be
+          responsible for planning, implementing, managing, and monitoring
+          company and client social media strategies.
+        </p>
+        <!-- <p>
+          We recognize that the world is a complex place and we strive to
+          deliver balance, support and growth through long-lasting partnerships
+          between our clients and our Executive Partner.
+        </p>
+        <p>
+          This is more than a job. It is a collaboration that has seen our most
+          talented XPs develop skills and create unforgettable opportunities
+          bigger than their wildest dreams.
+        </p>
+        <p>
+          But, like everything in life... reward comes from hard work. Being an
+          Athena XP isn't always easy, it requires resilience, creativity and a
+          desire to go above and beyond.
+        </p> -->
+        <p><strong>KEY RESPONSIBILITIES: </strong></p>
+        <p>
+          - Developing, implementing, and managing social media strategies..
+        </p>
+        <p>- Defining the most important social media KPIs.</p>
+        <p>- Managing and overseeing social media content.</p>
+        <p>- Measuring the success of every social media campaign.</p>
+        <p>
+          - Staying up to date with the latest social media best practices and
+          technologies.
+        </p>
+        <p><strong> SKILLS:</strong></p>
+        <p>
+          - Excellent knowledge of social media platforms and their algorithms.
+        </p>
+        <p>- Strong writing, editing, and communication</p>
+        <p>
+          - Analytical skills to measure and interpret social media metrics.
+        </p>
+        <p>- Creativity and the ability to develop engaging content.</p>
+
+        <p><strong>RELEVANT EXPERICENCE REQUIRED</strong></p>
+        <p>- Proven experience as a Social Media Manager or similar role.</p>
+        <p>- Experience with social media management tools.</p>
+        <p>- Strong portfolio of previous social media campaigns.</p>
+      </div>
+
+      <div id="application-form" class="application-form">
+        <h2>Start Your Application</h2>
+        <form action="#" method="post">
+          <label for="firstName"
+            >First Name <span style="color: red">*</span></label
+          >
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="lastName"
+            >Last Name <span style="color: red">*</span></label
+          >
+          <input type="text" id="lastName" name="lastName" required />
+
+          <label for="email">Email <span style="color: red">*</span></label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phoneNumber"
+            >Phone Number <span style="color: red">*</span></label
+          >
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="+000 123 4567"
+            required
+          />
+
+          <label>
+            <input type="checkbox" name="allowContact" required />
+            I agree to allow my phone number to be used for calls or texts
+            regarding my application. Message & data rates may apply.
+          </label>
+
+          <button type="submit" id="submit">Continue</button>
+        </form>
+
+        <div class="footer">
+          <a href="index.html#available-pos">View all jobs</a><br />
+          <a href="#">Back to top</a>
+          <!-- <p>
+            Having Trouble?
+            <a href="mailto:recruitment@athenago.com"
+              >recruitment@athenago.com</a
+            >
+          </p> -->
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+      } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBbTnwAgYqjAe6Mv3yb7GE2EdgHZ8OEs3E",
+        authDomain: "myagile-21204.firebaseapp.com",
+        projectId: "myagile-21204",
+        storageBucket: "myagile-21204.appspot.com",
+        messagingSenderId: "642164335116",
+        appId: "1:642164335116:web:fc16267fb4a2c1220ac429",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      // get db
+      const db = getDatabase(app);
+
+      document.getElementById("submit").addEventListener("click", function (e) {
+        e.preventDefault();
+        set(
+          ref(
+            db,
+            "socialmediamanager/" + document.getElementById("firstName").value
+          ),
+          {
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            email: document.getElementById("email").value,
+            phoneNumber: document.getElementById("phoneNumber").value,
+          }
+        )
+          .then(() => {
+            // Alert and redirect
+            alert(
+              "Application submitted successfully! You Will Be redirectly to upload your resume and portfolio"
+            );
+            window.location.href = "resume.html"; // Replace with your actual file name
+          })
+          .catch((error) => {
+            console.error("Error submitting application: ", error);
+            alert("Error submitting application. Please try again.");
+          });
+      });
+    </script>
+  </body>
+</html>
